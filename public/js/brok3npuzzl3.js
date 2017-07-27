@@ -110,10 +110,11 @@ function decodeOrderHash(hash, orientation) {
  *
  * @return the inverted hash
  **/
-function invert(hash) {
-    // Now you must flip reverse this # to continue. How to.. here: http://bfy.tw/CCwd /Noodle
-    return hash
-}
+
+ function invert(hash) {
+ -    return hash;
+ +    return hash.split("").reverse().join("");
+  }
 
 /**
  * Function that converts base64 character to int
